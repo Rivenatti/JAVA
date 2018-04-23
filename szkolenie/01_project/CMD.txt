@@ -1,2 +1,0 @@
-javac src/exercise/ShoppingCart.java -d class
-java -cp class exercise.ShoppingCart
