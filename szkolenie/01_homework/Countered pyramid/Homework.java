@@ -22,7 +22,7 @@ public class Homework{
             System.out.print("         Row count: " + (count-i));
             
             count = 0;
-            
+             
             
         }
      }
