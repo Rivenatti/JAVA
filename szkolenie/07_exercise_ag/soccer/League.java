@@ -14,9 +14,12 @@ public class League {
         playerTwo.playerName = "Carl Johnson";
         
         Player playerThree = new Player();
-        playerThree.playerName = "Jeffrey Smoke";
+        playerThree.playerName = "Jeffrey Smoke ff";
         
-        Player[] thePlayers = {playerOne, playerTwo, playerThree};
+        Player playerFour = new Player();
+        playerFour.playerName = "Marcin";
+        
+        Player[] thePlayers = {playerOne, playerTwo, playerThree, playerFour};
         
         // Team
         Team teamOne = new Team();
@@ -77,33 +80,41 @@ public class League {
                 currentGame.goals[0].thePlayer.playerName + " of "+
                 currentGame.goals[0].theTeam.teamName);
         
-        // Team Two Players:
-//        for(Player thePlayer: teamTwo.playerArray){
-//            System.out.println(thePlayer.playerName);
+//        //Team Two Players:
+//       for(Player thePlayer: teamOne.playerArray){
+//           System.out.println(thePlayer.playerName);
 //        }
         
         // Team Two Player:
         
-        for(Player thePlayer: teamTwo.playerArray){
-            if(thePlayer.playerName.matches(".*Sab.*")){
-              System.out.println("Found: " + thePlayer.playerName);
-                System.out.println("Last name is: " + thePlayer.playerName.split(" ")[1]);
-            }
-        }
+//        for(Player thePlayer: teamOne.playerArray){
+//            if(thePlayer.playerName.matches(".*Sab.*")){
+//              System.out.println("Found: " + thePlayer.playerName);
+//                System.out.println("Last name is: " + thePlayer.playerName.split(" ")[1]);
+//            }
+//        }
         
         StringBuilder familyNameFirst = new StringBuilder();
         
         for(Player thePlayer: teamOne.playerArray){
             String name[] = thePlayer.playerName.split(" ");
-            familyNameFirst.append(name[1]);
-            familyNameFirst.append(", ");
-            familyNameFirst.append(name[0]);
-            System.out.println(familyNameFirst);
+
+//            if(thePlayer.playerName.contains(" ")){
+//                familyNameFirst.append(name[1]);
+//                familyNameFirst.append(", ");
+//                familyNameFirst.append(name[0]);
+//                System.out.println(familyNameFirst);
+//            }else{
+//                System.out.println(thePlayer.playerName);
+//            }
+            
+            for(int i=0; i<name.length; i++){
+                familyNameFirst.append(name[i]);
+                familyNameFirst.append(", ");
+                System.out.println(familyNameFirst);
+            }
+            
         }
-        
-        
-        
-        
-        
+
     }
 }
