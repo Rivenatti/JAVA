@@ -1,6 +1,0 @@
-Build a pyramide of x, with given rows by users:
-
-P.E.
-	      x	
-	     x x
-            x x x
